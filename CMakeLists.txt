@@ -1316,6 +1316,8 @@ else()
     set(LIBNAME "OpenAL32")
 endif()
 
+set(OPENALLIBNAME ${LIBNAME} PARENT_SCOPE)
+
 # Needed for openal.pc.in
 set(prefix ${CMAKE_INSTALL_PREFIX})
 set(exec_prefix "\${prefix}")
